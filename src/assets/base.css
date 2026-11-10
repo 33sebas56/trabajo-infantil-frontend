@@ -1,0 +1,79 @@
+:root {
+  /* Colores principales de la interfaz */
+  --color-azul: #2b2c6b;
+  --color-azul-oscuro: #202151;
+  --color-amarillo: #f7b032;
+  --color-rojo: #e10818;
+
+  /* Fondos */
+  --color-blanco: #ffffff;
+  --color-fondo: #f7f8fa;
+  --color-fondo-suave: #eef0f5;
+
+  /* Textos y bordes */
+  --color-texto: #202124;
+  --color-texto-suave: #5f6368;
+  --color-borde: #d9dce4;
+
+  /* Medidas y efectos compartidos */
+  --radio-pequeno: 10px;
+  --radio-mediano: 16px;
+  --radio-grande: 24px;
+
+  --sombra-suave: 0 12px 32px rgba(43, 44, 107, 0.08);
+
+  font-family: 'Leelawadee UI', 'Segoe UI', Roboto, Arial, sans-serif;
+
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-amarillo);
+  outline-offset: 3px;
+}
