@@ -64,19 +64,9 @@ async function enviarFormulario(): Promise<void> {
         <!-- Marca -->
 
         <RouterLink to="/" class="login-marca" aria-label="Trabajo infantil. Volver al inicio">
-          <svg viewBox="0 0 76 58" fill="none" aria-hidden="true">
-            <g stroke="white" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="38" cy="12" r="8" />
-              <circle cx="14" cy="21" r="5.5" />
-              <circle cx="62" cy="21" r="5.5" />
-
-              <path
-                d="M21 46c0-9 7-15 17-15s17 6 17 15H21ZM4 46c0-8 4-12 12-12 3 0 5 1 7 2M72 46c0-8-4-12-12-12-3 0-5 1-7 2"
-              />
-
-              <path d="M5 54c20-9 46-9 66 0" stroke="#ffc600" />
-            </g>
-          </svg>
+          <span class="login-logo-cieti">
+            <img src="/logo-cieti.png" alt="CIETI municipal" />
+          </span>
 
           <strong> Trabajo <span>Infantil</span> </strong>
 
@@ -167,11 +157,6 @@ async function enviarFormulario(): Promise<void> {
             </button>
           </form>
 
-          <p class="login-ayuda">
-            <strong>¿Olvidaste tu contraseña?</strong><br />
-
-            Solicita ayuda a la persona responsable del sistema.
-          </p>
         </div>
       </section>
     </main>

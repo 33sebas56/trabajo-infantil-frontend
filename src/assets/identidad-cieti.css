@@ -1,0 +1,98 @@
+/* Identidad CIETI y acabados visuales compartidos. */
+#app
+  :is(
+    .pagina-inicio .identidad__simbolo,
+    .cmp-pagina .cmp-marca-simbolo,
+    .administracion .marca__simbolo,
+    .sobre-pagina .sobre-simbolo
+  ) {
+  flex: 0 0 68px;
+  width: 68px;
+  height: 68px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 12px;
+  background: #fff url('/logo-cieti.png') center / contain no-repeat;
+  box-shadow: 0 3px 12px rgba(0, 14, 52, 0.14);
+}
+
+#app .login-logo-cieti {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 96px;
+  margin: 0 auto 0.85rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(0, 14, 52, 0.18);
+}
+
+#app .login-logo-cieti img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#app .login-tarjeta {
+  border-color: rgba(184, 216, 255, 0.8);
+  box-shadow: 0 22px 55px rgba(0, 12, 50, 0.3);
+}
+
+#app .login-cuerpo {
+  padding-bottom: 2.15rem;
+  background: #fff;
+}
+
+#app .login-icono {
+  border-color: #fff;
+}
+
+#app
+  :is(
+    .pagina-inicio .filtros,
+    .pagina-inicio .tarjeta,
+    .pagina-inicio .panel-grafica,
+    .pagina-inicio .mapa-seccion,
+    .pagina-inicio .mp-seccion,
+    .cmp-pagina .cmp-filtros,
+    .cmp-pagina .cmp-tarjeta,
+    .cmp-pagina .cmp-tabla-panel,
+    .cmp-pagina .panel-grafica,
+    .administracion .panel,
+    .sobre-pagina .sobre-panel
+  ) {
+  border-color: #d1dff0;
+  box-shadow: 0 6px 20px rgba(19, 61, 111, 0.07);
+}
+
+#app :is(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid #ffc600;
+  outline-offset: 3px;
+}
+
+#app :is(button, a) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 700px) {
+  #app
+    :is(
+      .pagina-inicio .identidad__simbolo,
+      .cmp-pagina .cmp-marca-simbolo,
+      .administracion .marca__simbolo,
+      .sobre-pagina .sobre-simbolo
+    ) {
+    flex-basis: 52px;
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    background-size: contain;
+  }
+
+  #app .login-logo-cieti {
+    width: 100px;
+    height: 85px;
+  }
+}
